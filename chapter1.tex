@@ -1,0 +1,127 @@
+\chapter{设计原始材料}
+
+
+\section{设计任务书}
+1、依据《课程设计任务书》所给原始资料完成原始数据的计算与整理；
+
+2、依据最大设计速度和相关标准，配置接触线和承力索的合理张力；
+
+3、对于高速接触网（200km/h以上）需验算接触悬挂的动态特性以及承力索和接触线的机械安全系数；
+
+4、依据最大许可风偏值和速度等级所允许的跨中最大弹性确定最大许可跨距；
+
+5、复制车站平面图（放图）；
+
+6、划分锚段，验证锚段长度的合理性，绘出所给锚段的张力增量曲线；
+
+7、平面设计
+\begin{enumerate}
+	\item 完成所给站场的接触网平面图；
+	\item 绘出咽喉区部位放大图；
+	\item 写出设计主要原则，重大技术问题的处理方法及方案比选；
+	\item 绘出该站的供电分段图；
+\end{enumerate}
+
+8、绘制各类安装曲线图；
+
+9、验算一组软横跨的支柱容量；
+
+10、预配一组软横跨或者腕臂柱支持和定位装置；
+
+11、技术专题讨论，设计总结，各自写，不可相同。
+
+\section{设计原始资料}
+1、车站九平面图（初步设计）
+2、悬挂类型： 
+\begin{itemize}
+	\item 正线采用全补偿弹性链型悬挂：JTM-95+CTMH-120；
+	\item 站线采用半补偿弹性链型悬挂：JTM-95+CTMH-110；
+	\item 正线接触线、承力索张力：15kN、15kN；
+	\item 站线接触线、承力索张力：10kN、10kN；
+	\item 全线采用直供+回流线的供电方式，回流线与接触网同杆架设。
+	\item 回流线采用LBGLJ185/25绞线。
+\end{itemize}
+
+3、气象条件、污秽区划分
+
+（1）气象条件：第VIII气象区
+
+（2）污秽区划分： 重污秽区
+4、设计速度：120km/h
+
+5、地质条件：$\gamma =1.6t/m^3\text{，}\phi =30^{\circ}\text{，}\left[ R \right] =100KP_a
+$, 挖填方请参考初步设计图
+
+6、其它条件及要求请参考《接触网作业指导书》。
+
+\subsection{设计标准和依据}
+\begin{itemize}
+	\item TB 10059-2015 铁路工程图形符号标准 
+	\item TB T2809-2017 电气化铁路用铜及铜合金接触线(1)
+	\item TBT3111-2017电气化铁路用铜及铜合金绞线（附2005版对照） 
+	\item 高速铁路设计规范（TB10621-2014）
+\end{itemize}
+
+\subsection{气象资料}
+（1）气象条件：第VIII气象区
+
+（2）污秽区划分： 重污秽区
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[h]
+	\centering
+	\caption{第VIII气象分区气象参数表}
+	\label{tab:第VIII气象分区气象参数表}
+
+		\begin{tabular}{|c|cccc|}
+			\hline
+			& \multicolumn{1}{c|}{最高}  & \multicolumn{1}{c|}{最低}  & \multicolumn{1}{c|}{覆冰} & 最大风 \\ \hline
+			大气温度 / ℃     & \multicolumn{1}{c|}{+40} & \multicolumn{1}{c|}{-20} & \multicolumn{1}{c|}{-5} & -5  \\ \hline
+			风速 / ($m/s$) & \multicolumn{1}{c|}{}    & \multicolumn{1}{c|}{}    & \multicolumn{1}{c|}{15} & 30  \\ \hline
+			覆冰厚度 / $mm$       & \multicolumn{4}{c|}{15}  \\ \hline
+			覆冰密度 / ($kg/m^3$) & \multicolumn{4}{c|}{900} \\ \hline
+		\end{tabular}%
+	
+\end{table}
+
+\subsection{线路资料}
+车站九平面图（初步设计）
+
+\section{悬挂数据}
+接触网的结构高度是指在链型悬挂的定位点处，承力索的中心与接触线的中心之间的垂直距离。在本课程设计中，结构高度设定为h=1.6m。对于接触悬挂线索，本设计中，在站线部分选用了JT-95型线索，其最大补偿张力为$T_{cmax}=1500kg=15kN$；而站线接触线选用了CT-110型线索，其最大补偿张力为$T_{jmax}=1000kg=10kN$。在正线部分，同样选用了JT-95型线索用于承力索，而正线接触线则选用了CT-120型线索，其最大补偿张力也为$T_{jmax}=1000kg=10kN$。上述线索参数如\ref{tab:悬挂数据}所示：
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[h]
+	\centering
+	\caption{悬挂数据}
+	\label{tab:悬挂数据}
+
+		\begin{tabular}{|c|ccc|c|}
+			\hline
+			线索型号 & \multicolumn{1}{c|}{计算截面 / mm2} & \multicolumn{1}{c|}{A±1\%} & B±1\% & 单位质量 / (kg·km-1) \\ \hline
+			CT-120 & \multicolumn{1}{c|}{121} & \multicolumn{1}{c|}{12.9}  & 12.9  & 1082             \\ \hline
+			CT110  & \multicolumn{1}{c|}{111} & \multicolumn{1}{c|}{12.34} & 12.34 & 992              \\ \hline
+			线索型号   & \multicolumn{3}{c|}{计算直径 / mm2}                               & 单位质量 / (kg·km-1) \\ \hline
+			JT95   & \multicolumn{3}{c|}{12.5}                                     & 849              \\ \hline
+		\end{tabular}%
+	
+\end{table}
+
+\section{土壤特性}
+
+接触网的支柱安置有填方和挖方两种方式。填方指的是支柱基础表面高于原地面时，从原地面填筑至支柱基础表面部分的土石体积；挖方指的是支柱基础表
+面低于原地面时，从原地面至支柱基础表面挖去部分的土石体积。土壤安息角是指松散沙土在自身重力作用下自然形成的与水平面的稳定夹角。土壤允许承压力与安息角对应关系如表所示。
+\begin{table}[h]
+	\centering
+	\caption{土壤承压力与安息角对应表}
+	\begin{tabular}{llllll}
+		\hline
+		允许承压力 /kpa & 100  & 150 & 200 & 250 & 300 \\ \hline
+		土壤安息角  & 17-20 & 30 & 35 & 40 & 40以上 \\ \hline
+	\end{tabular}
+	\label{土壤承压力与安息角对应表}
+\end{table}
+
+
